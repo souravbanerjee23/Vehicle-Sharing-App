@@ -11,10 +11,10 @@ class PassengerController < ApplicationController
   end
 
   def create
-    @article = Article.new(title: "...", body: "...")
+    @passenger = Passenger.new(passenger_id: "...", phone: "...",address: "...",email:"...",password:"...")
 
     if @article.save
-      redirect_to @article
+      redirect_to @passenger
     else
       render :new
     end
